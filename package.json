@@ -4,8 +4,17 @@
     "description": "",
     "main": "index.js",
     "scripts": {
+<<<<<<< HEAD
         "sass": "sass --watch ./sass/main.scss:./style.css"
     },
     "author": "",
     "license": "ISC"
+=======
+        "sass": "sass --watch ./sass/main.scss:./style.css",
+        "prefix": "postcss ./style.css --use autoprefixer -d ./css/prefixed/"
+    },
+    "author": "",
+    "license": "ISC",
+    "browserslist": "last 4 versions"
+>>>>>>> Secondbranch
 }
