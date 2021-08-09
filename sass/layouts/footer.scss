@@ -1,0 +1,23 @@
+footer {
+    background-color: rgb(53, 53, 53);
+    padding-bottom: 3%;
+    padding-top: 2%;
+    h4 {
+        font-family: Shrikhand, 'cursive';
+        font-size: 1.2em;
+        color: #fff;
+        margin-left: 9%;
+    }
+}
+
+ul {
+    list-style: none;
+    color: white;
+    li {
+        margin-bottom: 3%;
+        a {
+            text-decoration: none;
+            color: white;
+        }
+    }
+}

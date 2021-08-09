@@ -1,5 +1,98 @@
-p {
-  color: blue;
+footer {
+  background-color: #353535;
+  padding-bottom: 3%;
+  padding-top: 2%;
+}
+footer h4 {
+  font-family: Shrikhand, "cursive";
+  font-size: 1.2em;
+  color: #fff;
+  margin-left: 9%;
+}
+
+ul {
+  list-style: none;
+  color: white;
+}
+ul li {
+  margin-bottom: 3%;
+}
+ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.btn {
+  padding: 3%;
+  border-radius: 20px;
+  background: linear-gradient(RGB(255, 121, 218, 0.9), RGB(147, 86, 220, 0.9));
+  color: #fff;
+  border: none;
+}
+
+html body {
+  font-family: Roboto, sans-serif;
+  border: 2px solid black;
+}
+html body h1 {
+  font-family: "Shrikhand", cursive;
+  display: flex;
+  justify-content: center;
+}
+html body h2 {
+  margin-left: 5%;
+}
+
+.position {
+  display: flex;
+  justify-content: center;
+  font-size: 1.2em;
+  background-color: #eaeaea;
+}
+.position .local__icon {
+  display: flex;
+  align-items: center;
+  margin-right: 3%;
+}
+
+.headertxt {
+  text-align: center;
+  background-color: #fafafa;
+  padding: 10%;
+}
+
+.Fonctionnement {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.Fonctionnement .tuto {
+  width: 65%;
+  padding: 8%;
+  margin-bottom: 15%;
+  background-color: #fafafa;
+  border-radius: 20px;
+  box-shadow: 0.25rem 0.25rem 0.5rem gray;
+}
+.Fonctionnement .tuto .tuto__icon {
+  margin-right: 5%;
+}
+
+.restaurants {
+  background-color: #fafafa;
+}
+.restaurants .bloccarte {
+  border-radius: 15px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 6%;
+  box-shadow: 0.25rem 0.25rem 0.5rem gray;
+}
+.restaurants .bloccarte img {
+  width: 100%;
+  height: 250px;
+  border-radius: 15px 15px 0px 0px;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=style.css.map */
