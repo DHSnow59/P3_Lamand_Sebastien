@@ -23,8 +23,9 @@ ul li a {
 }
 
 .btn {
-  padding: 3%;
-  border-radius: 20px;
+  width: 75%;
+  padding: 5%;
+  border-radius: 30px;
   background: linear-gradient(RGB(255, 121, 218, 0.9), RGB(147, 86, 220, 0.9));
   color: #fff;
   border: none;
@@ -80,6 +81,8 @@ html body h2 {
 
 .restaurants {
   background-color: #fafafa;
+  padding-top: 7%;
+  padding-bottom: 7%;
 }
 .restaurants .bloccarte {
   border-radius: 15px;
@@ -88,11 +91,29 @@ html body h2 {
   margin-bottom: 6%;
   box-shadow: 0.25rem 0.25rem 0.5rem gray;
 }
+.restaurants .bloccarte .carte {
+  text-decoration: none;
+}
 .restaurants .bloccarte img {
   width: 100%;
   height: 250px;
   border-radius: 15px 15px 0px 0px;
   object-fit: cover;
+}
+.restaurants .bloccarte .bloctxtcoeur {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+}
+.restaurants .bloccarte .bloctxtcoeur .txtimg {
+  line-height: 0.5em;
+  margin-left: 3%;
+}
+.restaurants .bloccarte .bloctxtcoeur .coeur {
+  margin-right: 8%;
 }
 
 /*# sourceMappingURL=style.css.map */
