@@ -2,6 +2,17 @@
     @import"./utils/mixins";
     @import"./layouts/footer";
     @import"./components/button";
+    @keyframes menuanim {
+        from {
+            transform: translateY(-20px);
+            opacity: 0;
+        }
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+    
     @media (max-width: 2560px) and (min-width: 767px) {
         html {
             body {
@@ -81,6 +92,20 @@
                 margin-right: 4%;
                 margin-bottom: 5%;
                 box-shadow: 0.25rem 0.25rem 0.5rem gray;
+                position: relative;
+                z-index: 0;
+                .news {
+                    position: absolute;
+                    top: 5%;
+                    right: 4%;
+                    z-index: 1;
+                    background-color: #99E2D0;
+                    color: darken(#99E2D0, 30%);
+                    height: 17px;
+                    width: 20%;
+                    text-align: center;
+                    padding: 2%;
+                }
                 .carte {
                     text-decoration: none;
                 }
@@ -250,6 +275,20 @@
                 margin-right: 5%;
                 margin-bottom: 6%;
                 box-shadow: 0.25rem 0.25rem 0.5rem gray;
+                position: relative;
+                z-index: 0;
+                .news {
+                    position: absolute;
+                    top: 5%;
+                    right: 4%;
+                    z-index: 1;
+                    background-color: #99E2D0;
+                    color: darken(#99E2D0, 30%);
+                    height: 17px;
+                    width: 20%;
+                    text-align: center;
+                    padding: 2%;
+                }
                 .carte {
                     text-decoration: none;
                 }
@@ -306,7 +345,7 @@
                 flex-wrap: wrap;
                 h1 {
                     margin-left: 4%;
-                    font-size: 1.7em;
+                    font-size: 1.6em;
                 }
                 .coeur {
                     margin-right: 6%;
@@ -340,6 +379,8 @@
             width: 90%;
             margin-left: 5%;
             margin-bottom: 5%;
+            opacity: 0;
+            animation: menuanim 400ms forwards;
             .txtmenu {
                 margin-left: 3%;
             }
@@ -347,5 +388,32 @@
                 margin-right: 5%;
                 margin-top: 13%;
             }
+        }
+        .delay-0 {
+            animation-delay: 0;
+        }
+        .delay-1 {
+            animation-delay: 1s;
+        }
+        .delay-2 {
+            animation-delay: 2s;
+        }
+        .delay-3 {
+            animation-delay: 3s;
+        }
+        .delay-4 {
+            animation-delay: 4s;
+        }
+        .delay-5 {
+            animation-delay: 5s;
+        }
+        .delay-6 {
+            animation-delay: 6s;
+        }
+        .delay-7 {
+            animation-delay: 7s;
+        }
+        .delay-8 {
+            animation-delay: 8s;
         }
     }
