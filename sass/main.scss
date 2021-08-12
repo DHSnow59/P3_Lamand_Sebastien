@@ -51,6 +51,13 @@
                     background-color: $colour-bgaccueil;
                     border-radius: 20px;
                     box-shadow: 0.25rem 0.25rem 0.5rem gray;
+                    .chiffre {
+                        background-color: #9356DC;
+                        border-radius: 50%;
+                        padding: 5px 8px 5px 8px;
+                        margin-left: -18%;
+                        margin-right: 10%;
+                    }
                     .tuto__icon {
                         margin-right: 5%;
                     }
@@ -122,8 +129,6 @@
             object-fit: cover;
         }
         .conteneurpalettegout {
-            width: 50%;
-            margin-left: 25%;
             background-color: #f6f6f6;
             margin-top: -35%;
             padding-bottom: 5%;
@@ -211,16 +216,29 @@
             flex-direction: column;
             align-items: stretch;
             .tuto {
-                width: 65%;
-                padding: 8%;
+                list-style: none;
+                font-size: 0.9em;
+                font-weight: bold;
+                width: 80%;
+                padding: 7%;
                 margin-bottom: 15%;
                 background-color: $colour-bgaccueil;
                 border-radius: 20px;
                 box-shadow: 0.25rem 0.25rem 0.5rem gray;
+                .chiffre {
+                    background-color: #9356DC;
+                    border-radius: 50%;
+                    padding: 5px 8px 5px 8px;
+                    margin-left: -13%;
+                    margin-right: 6%;
+                }
                 .tuto__icon {
                     margin-right: 5%;
                 }
             }
+        }
+        ol {
+            padding-left: 20px;
         }
         .restaurants {
             background-color: $colour-bgaccueil;
@@ -301,11 +319,19 @@
                 margin-left: 5%;
                 color: gray;
             }
+            .barre {
+                height: 3px;
+                width: 17%;
+                margin-left: 5%;
+                margin-top: -5%;
+                margin-bottom: 5%;
+                background-color: #99E2D0;
+            }
         }
         .conteneurmenu {
             display: flex;
             flex-direction: row;
-            flex-wrap: wrap;
+            flex-wrap: nowrap;
             justify-content: space-between;
             align-items: center;
             background-color: #fff;
