@@ -2,6 +2,19 @@
     @import"./utils/mixins";
     @import"./layouts/footer";
     @import"./components/button";
+    /* Animation du loader */
+    
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+            opacity: 0;
+        }
+    }
+    /* Animation apparition des menus */
+    
     @keyframes menuanim {
         from {
             transform: translateY(0);
@@ -218,6 +231,31 @@
                 h2 {
                     margin-left: 5%;
                 }
+                .conteneurloader {
+                    margin: 0;
+                    width: 100%;
+                    height: 100%;
+                    position: fixed;
+                    background-color: #fff;
+                    z-index: 100;
+                    .loader {
+                        /* Création du loader */
+                        border: 10px solid #f3f3f3;
+                        border-top: 10px solid pink;
+                        border-bottom: 10px solid purple;
+                        border-radius: 50%;
+                        width: 100px;
+                        height: 100px;
+                        animation: spin 2s linear forwards;
+                        /* placement du loader au milieu de la page */
+                        margin: auto;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                    }
+                }
             }
         }
         .position {
@@ -316,9 +354,6 @@
                             position: relative;
                             z-index: 1;
                             opacity: 1;
-                            &:hover {
-                                background-color: purple;
-                            }
                         }
                         .coeurplein {
                             position: absolute;

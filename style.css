@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @media (max-width: 2560px) and (min-width: 767px) {
   footer {
     background-color: #353535;
@@ -120,6 +121,17 @@
     box-shadow: 0.25rem 0.25rem 10px black;
   }
 }
+/* Animation du loader */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 0;
+  }
+}
+/* Animation apparition des menus */
 @keyframes menuanim {
   from {
     transform: translateY(0);
@@ -341,6 +353,31 @@
   html body h2 {
     margin-left: 5%;
   }
+  html body .conteneurloader {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: #fff;
+    z-index: 100;
+  }
+  html body .conteneurloader .loader {
+    /* Création du loader */
+    border: 10px solid #f3f3f3;
+    border-top: 10px solid pink;
+    border-bottom: 10px solid purple;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    animation: spin 2s linear forwards;
+    /* placement du loader au milieu de la page */
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
 
   .position {
     display: flex;
@@ -446,9 +483,6 @@
     position: relative;
     z-index: 1;
     opacity: 1;
-  }
-  .restaurants .bloccarte .bloctxtcoeur .coeur .coeurvide:hover {
-    background-color: purple;
   }
   .restaurants .bloccarte .bloctxtcoeur .coeur .coeurplein {
     position: absolute;
