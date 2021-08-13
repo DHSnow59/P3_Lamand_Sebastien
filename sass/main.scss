@@ -310,10 +310,21 @@
                         margin-left: 3%;
                     }
                     .coeur {
-                        margin-right: 8%;
                         font-size: 2em;
-                        i.fas.fa-heart {
-                            display: none;
+                        margin-right: 8%;
+                        .coeurvide {
+                            position: relative;
+                            z-index: 1;
+                            opacity: 1;
+                            &:hover {
+                                background-color: purple;
+                            }
+                        }
+                        .coeurplein {
+                            position: absolute;
+                            right: 8%;
+                            z-index: 2;
+                            opacity: 0;
                         }
                     }
                 }

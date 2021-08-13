@@ -439,11 +439,22 @@
     margin-left: 3%;
   }
   .restaurants .bloccarte .bloctxtcoeur .coeur {
-    margin-right: 8%;
     font-size: 2em;
+    margin-right: 8%;
   }
-  .restaurants .bloccarte .bloctxtcoeur .coeur i.fas.fa-heart {
-    display: none;
+  .restaurants .bloccarte .bloctxtcoeur .coeur .coeurvide {
+    position: relative;
+    z-index: 1;
+    opacity: 1;
+  }
+  .restaurants .bloccarte .bloctxtcoeur .coeur .coeurvide:hover {
+    background-color: purple;
+  }
+  .restaurants .bloccarte .bloctxtcoeur .coeur .coeurplein {
+    position: absolute;
+    right: 8%;
+    z-index: 2;
+    opacity: 0;
   }
 
   .headergout {
