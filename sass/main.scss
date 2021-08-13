@@ -49,6 +49,7 @@
                 .conteneurloader {
                     /* Position et appel de l'animation */
                     position: fixed;
+                    z-index: 3;
                     width: 100%;
                     height: 100%;
                     display: flex;
@@ -70,7 +71,7 @@
                         /* placement du loader au milieu de la page */
                         margin: auto;
                         position: absolute;
-                        z-index: 3;
+                        z-index: 1;
                         top: 0;
                         left: 0;
                         right: 0;
@@ -145,6 +146,7 @@
                 margin-bottom: 5%;
                 box-shadow: 0.25rem 0.25rem 0.5rem gray;
                 position: relative;
+                z-index: 0;
                 .news {
                     position: absolute;
                     top: 5%;
@@ -271,6 +273,7 @@
                 .conteneurloader {
                     /* Position et appel de l'animation */
                     position: fixed;
+                    z-index: 3;
                     width: 100%;
                     height: 100%;
                     display: flex;
