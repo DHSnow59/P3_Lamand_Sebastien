@@ -1,4 +1,4 @@
-@media (max-width: 2560px) and (min-width: 767px) {
+@media (max-width: 2560px) {
     .btn {
         flex-wrap: nowrap;
         width: 20%;
@@ -30,6 +30,16 @@
             background: linear-gradient(#ff93e1, #a16be0);
             box-shadow: 0.25rem 0.25rem 10px black;
         }
+    }
+}
+
+@media (max-width: 1024px) {
+    .btn {
+        width: 40%;
+        padding: 2%;
+    }
+    .commander {
+        font-size: 1.2em;
     }
 }
 

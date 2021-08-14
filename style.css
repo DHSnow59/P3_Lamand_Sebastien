@@ -1,631 +1,712 @@
 @charset "UTF-8";
 @media (max-width: 2560px) and (min-width: 767px) {
-    footer {
-        background-color: #353535;
-        padding-top: 2%;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-    }
-    footer h4 {
-        font-family: Shrikhand, "cursive";
-        font-size: 1.2em;
-        color: #fff;
-        margin-left: 9%;
-    }
-    ul {
-        list-style: none;
-        color: white;
-        margin-left: 10%;
-    }
-    ul li {
-        margin-bottom: 7%;
-    }
-    ul li a {
-        text-decoration: none;
-        color: white;
-    }
-}
+  footer {
+    background-color: #353535;
+    padding-top: 2%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  footer h4 {
+    font-family: Shrikhand, "cursive";
+    font-size: 1.2em;
+    color: #fff;
+    margin-left: 9%;
+  }
 
+  ul {
+    list-style: none;
+    color: white;
+    margin-left: 10%;
+  }
+  ul li {
+    margin-bottom: 7%;
+  }
+  ul li a {
+    text-decoration: none;
+    color: white;
+  }
+}
 @media (max-width: 425px) {
-    footer {
-        background-color: #353535;
-        padding-bottom: 3%;
-        padding-top: 2%;
-    }
-    footer h4 {
-        font-family: Shrikhand, "cursive";
-        font-size: 1.2em;
-        color: #fff;
-        margin-left: 9%;
-    }
-    ul {
-        list-style: none;
-        color: white;
-    }
-    ul li {
-        margin-bottom: 3%;
-    }
-    ul li a {
-        text-decoration: none;
-        color: white;
-    }
-}
+  footer {
+    background-color: #353535;
+    padding-bottom: 3%;
+    padding-top: 2%;
+  }
+  footer h4 {
+    font-family: Shrikhand, "cursive";
+    font-size: 1.2em;
+    color: #fff;
+    margin-left: 9%;
+  }
 
-@media (max-width: 2560px) and (min-width: 767px) {
-    .btn {
-        flex-wrap: nowrap;
-        width: 20%;
-        padding: 1%;
-        font-size: 1.3em;
-        border-radius: 30px;
-        background: linear-gradient(#FF79DA, #9356DC);
-        box-shadow: 0.25rem 0.25rem 10px #3535358a;
-        color: #fff;
-        border: none;
-        transition: 400ms;
-    }
-    .btn:hover {
-        background: linear-gradient(#ff93e1, #a16be0);
-        box-shadow: 0.25rem 0.25rem 10px black;
-    }
-    .commander {
-        width: 50%;
-        margin-left: 25%;
-        padding: 5%;
-        border-radius: 30px;
-        background: linear-gradient(#FF79DA, #9356DC);
-        box-shadow: 0.25rem 0.25rem 10px #3535358a;
-        color: #fff;
-        border: none;
-        justify-content: center;
-        transition: 400ms;
-    }
-    .commander:hover {
-        background: linear-gradient(#ff93e1, #a16be0);
-        box-shadow: 0.25rem 0.25rem 10px black;
-    }
+  ul {
+    list-style: none;
+    color: white;
+  }
+  ul li {
+    margin-bottom: 3%;
+  }
+  ul li a {
+    text-decoration: none;
+    color: white;
+  }
 }
+@media (max-width: 2560px) {
+  .btn {
+    flex-wrap: nowrap;
+    width: 20%;
+    padding: 1%;
+    font-size: 1.3em;
+    border-radius: 30px;
+    background: linear-gradient(#FF79DA, #9356DC);
+    box-shadow: 0.25rem 0.25rem 10px #3535358a;
+    color: #fff;
+    border: none;
+    transition: 400ms;
+  }
+  .btn:hover {
+    background: linear-gradient(#ff93e1, #a16be0);
+    box-shadow: 0.25rem 0.25rem 10px black;
+  }
 
+  .commander {
+    width: 50%;
+    margin-left: 25%;
+    padding: 5%;
+    border-radius: 30px;
+    background: linear-gradient(#FF79DA, #9356DC);
+    box-shadow: 0.25rem 0.25rem 10px #3535358a;
+    color: #fff;
+    border: none;
+    justify-content: center;
+    transition: 400ms;
+  }
+  .commander:hover {
+    background: linear-gradient(#ff93e1, #a16be0);
+    box-shadow: 0.25rem 0.25rem 10px black;
+  }
+}
+@media (max-width: 1024px) {
+  .btn {
+    width: 40%;
+    padding: 2%;
+  }
+
+  .commander {
+    font-size: 1.2em;
+  }
+}
 @media (max-width: 425px) {
-    .btn {
-        width: 75%;
-        padding: 5%;
-        border-radius: 30px;
-        background: linear-gradient(#FF79DA, #9356DC);
-        box-shadow: 0.25rem 0.25rem 10px #3535358a;
-        color: #fff;
-        border: none;
-        transition: 400ms;
-    }
-    .btn:hover {
-        background: linear-gradient(#ff93e1, #a16be0);
-        box-shadow: 0.25rem 0.25rem 10px black;
-    }
-    .commander {
-        width: 50%;
-        margin-left: 25%;
-        padding: 5%;
-        border-radius: 30px;
-        background: linear-gradient(#FF79DA, #9356DC);
-        box-shadow: 0.25rem 0.25rem 10px #3535358a;
-        color: #fff;
-        border: none;
-        justify-content: center;
-        transition: 400ms;
-    }
-    .commander:hover {
-        background: linear-gradient(#ff93e1, #a16be0);
-        box-shadow: 0.25rem 0.25rem 10px black;
-    }
+  .btn {
+    width: 75%;
+    padding: 5%;
+    border-radius: 30px;
+    background: linear-gradient(#FF79DA, #9356DC);
+    box-shadow: 0.25rem 0.25rem 10px #3535358a;
+    color: #fff;
+    border: none;
+    transition: 400ms;
+  }
+  .btn:hover {
+    background: linear-gradient(#ff93e1, #a16be0);
+    box-shadow: 0.25rem 0.25rem 10px black;
+  }
+
+  .commander {
+    width: 50%;
+    margin-left: 25%;
+    padding: 5%;
+    border-radius: 30px;
+    background: linear-gradient(#FF79DA, #9356DC);
+    box-shadow: 0.25rem 0.25rem 10px #3535358a;
+    color: #fff;
+    border: none;
+    justify-content: center;
+    transition: 400ms;
+  }
+  .commander:hover {
+    background: linear-gradient(#ff93e1, #a16be0);
+    box-shadow: 0.25rem 0.25rem 10px black;
+  }
 }
-
-
 /* Animation fond du loader */
-
 @keyframes loadbg {
-    100% {
-        opacity: 0;
-        z-index: -1;
-    }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
 }
-
-
 /* Animation du loader */
-
 @keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-        opacity: 0;
-    }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 0;
+  }
 }
-
-
 /* Animation apparition des menus */
-
 @keyframes menuanim {
-    from {
-        transform: translateY(0);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(-20px);
-        opacity: 1;
-    }
+  from {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(-20px);
+    opacity: 1;
+  }
 }
+@media (max-width: 2560px) {
+  html body {
+    font-family: Roboto, sans-serif;
+  }
+  html body h1 {
+    font-family: "Shrikhand", cursive;
+    display: flex;
+    justify-content: center;
+  }
+  html body h2 {
+    margin-left: 5%;
+  }
+  html body .conteneurloader {
+    /* Position et appel de l'animation */
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fffffff2;
+    animation: loadbg 0.1s;
+    animation-delay: 2.9s;
+    animation-fill-mode: both;
+  }
+  html body .conteneurloader .loader {
+    /* Création du loader */
+    border: 10px solid #f3f3f3;
+    border-top: 10px solid #FF79DA;
+    border-bottom: 10px solid #9356DC;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    animation: spin 4s linear;
+    /* placement du loader au milieu de la page */
+    margin: auto;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
 
-@media (max-width: 2560px) and (min-width: 767px) {
-    html body {
-        font-family: Roboto, sans-serif;
-    }
-    html body h1 {
-        font-family: "Shrikhand", cursive;
-        display: flex;
-        justify-content: center;
-    }
-    html body h2 {
-        margin-left: 5%;
-    }
-    html body .conteneurloader {
-        /* Position et appel de l'animation */
-        position: fixed;
-        z-index: 3;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: #fffffff2;
-        animation: loadbg 0.1s;
-        animation-delay: 2.9s;
-        animation-fill-mode: both;
-    }
-    html body .conteneurloader .loader {
-        /* Création du loader */
-        border: 10px solid #f3f3f3;
-        border-top: 10px solid #FF79DA;
-        border-bottom: 10px solid #9356DC;
-        border-radius: 50%;
-        width: 100px;
-        height: 100px;
-        animation: spin 4s linear;
-        /* placement du loader au milieu de la page */
-        margin: auto;
-        position: absolute;
-        z-index: 1;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-    }
-    .position {
-        display: flex;
-        justify-content: center;
-        font-size: 1.2em;
-        background-color: #eaeaea;
-    }
-    .position .local__icon {
-        display: flex;
-        align-items: center;
-        margin-right: 3%;
-    }
-    .headertxt {
-        text-align: center;
-        background-color: #f6f6f6;
-        padding: 2%;
-    }
-    .Fonctionnement {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-    .Fonctionnement h2 {
-        margin-left: 1%;
-    }
-    .Fonctionnement ol {
-        margin-right: 2%;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    .Fonctionnement ol li {
-        width: 22.5%;
-        padding: 3%;
-        background-color: #f6f6f6;
-        border-radius: 20px;
-        box-shadow: 0.25rem 0.25rem 0.5rem gray;
-    }
-    .Fonctionnement ol li .chiffre {
-        background-color: #9356DC;
-        border-radius: 50%;
-        padding: 5px 8px 5px 8px;
-        margin-left: -18%;
-        margin-right: 10%;
-    }
-    .Fonctionnement ol li .tuto__icon {
-        margin-right: 5%;
-    }
-    .restaurants {
-        background-color: #f6f6f6;
-        padding-top: 1%;
-        padding-bottom: 2%;
-    }
-    .restaurants .conteneurresto {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        align-items: stretch;
-    }
-    .restaurants .bloccarte {
-        width: 40%;
-        border-radius: 15px;
-        margin-left: 4%;
-        margin-right: 4%;
-        margin-bottom: 5%;
-        box-shadow: 0.25rem 0.25rem 0.5rem gray;
-        position: relative;
-        z-index: 0;
-    }
-    .restaurants .bloccarte .news {
-        position: absolute;
-        top: 5%;
-        right: 4%;
-        background-color: #99E2D0;
-        color: #32b091;
-        height: 17px;
-        width: 20%;
-        text-align: center;
-        padding: 2%;
-    }
-    .restaurants .bloccarte .carte {
-        text-decoration: none;
-    }
-    .restaurants .bloccarte img {
-        width: 100%;
-        height: 250px;
-        border-radius: 15px 15px 0px 0px;
-        object-fit: cover;
-    }
-    .restaurants .bloccarte .bloctxtcoeur {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
-        color: black;
-    }
-    .restaurants .bloccarte .bloctxtcoeur .txtimg {
-        line-height: 0.5em;
-        margin-left: 3%;
-    }
-    .restaurants .bloccarte .bloctxtcoeur .coeur {
-        margin-right: 8%;
-        font-size: 2em;
-    }
-    .restaurants .bloccarte .bloctxtcoeur .coeur i.fas.fa-heart {
-        display: none;
-    }
-    body {
-        background-color: #f6f6f6;
-    }
-    .headergout {
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        flex-direction: row;
-        flex-wrap: wrap;
-        margin-right: 15%;
-    }
-    img {
-        width: 100%;
-        height: 1000px;
-        object-fit: cover;
-    }
-    .conteneurpalettegout {
-        background-color: #f6f6f6;
-        margin-top: -35%;
-        padding-bottom: 5%;
-        position: relative;
-        border-radius: 35px 35px 0px 0px;
-        box-shadow: 0.25rem 0.25rem 10px #3535358a;
-        opacity: 0.9;
-    }
-    .conteneurpalettegout .TitreMenuPalette {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-    .conteneurpalettegout .TitreMenuPalette h1 {
-        margin-left: 4%;
-        font-size: 1.7em;
-    }
-    .conteneurpalettegout .TitreMenuPalette .coeur {
-        margin-right: 6%;
-    }
-    .menu {
-        margin-bottom: 10%;
-    }
-    .menu h3 {
-        margin-left: 5%;
-        color: gray;
-    }
-    .conteneurmenu {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
-        background-color: #fff;
-        border-radius: 20px;
-        box-shadow: 0.25rem 0.25rem 0.5rem gray;
-        width: 90%;
-        margin-left: 5%;
-        margin-bottom: 5%;
-    }
-    .conteneurmenu .txtmenu {
-        margin-left: 3%;
-    }
-    .conteneurmenu .prix {
-        margin-right: 5%;
-        margin-top: 13%;
-    }
+  .position {
+    display: flex;
+    justify-content: center;
+    font-size: 1.2em;
+    background-color: #eaeaea;
+  }
+  .position .local__icon {
+    display: flex;
+    align-items: center;
+    margin-right: 3%;
+  }
+
+  .headertxt {
+    text-align: center;
+    background-color: #f6f6f6;
+    padding: 2%;
+  }
+
+  .Fonctionnement {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .Fonctionnement h2 {
+    margin-left: 1%;
+  }
+  .Fonctionnement ol {
+    list-style: none;
+    margin-right: 2%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .Fonctionnement ol li {
+    width: 22.5%;
+    padding: 3%;
+    background-color: #f6f6f6;
+    border-radius: 20px;
+    box-shadow: 0.25rem 0.25rem 0.5rem gray;
+  }
+  .Fonctionnement ol li .chiffre {
+    background-color: #9356DC;
+    border-radius: 50%;
+    padding: 5px 8px 5px 8px;
+    margin-left: -18%;
+    margin-right: 10%;
+  }
+  .Fonctionnement ol li .tuto__icon {
+    margin-right: 5%;
+  }
+
+  .restaurants {
+    background-color: #f6f6f6;
+    padding-top: 1%;
+    padding-bottom: 2%;
+  }
+  .restaurants .conteneurresto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+  }
+  .restaurants .bloccarte {
+    width: 40%;
+    border-radius: 15px;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-bottom: 5%;
+    box-shadow: 0.25rem 0.25rem 0.5rem gray;
+    position: relative;
+    z-index: 0;
+  }
+  .restaurants .bloccarte .news {
+    position: absolute;
+    top: 5%;
+    right: 4%;
+    background-color: #99E2D0;
+    color: #32b091;
+    height: 17px;
+    width: 20%;
+    text-align: center;
+    padding: 2%;
+  }
+  .restaurants .bloccarte .carte {
+    text-decoration: none;
+  }
+  .restaurants .bloccarte img {
+    width: 100%;
+    height: 250px;
+    border-radius: 15px 15px 0px 0px;
+    object-fit: cover;
+  }
+  .restaurants .bloccarte .bloctxtcoeur {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+  }
+  .restaurants .bloccarte .bloctxtcoeur .txtimg {
+    line-height: 0.5em;
+    margin-left: 3%;
+  }
+  .restaurants .bloccarte .bloctxtcoeur .coeur {
+    margin-right: 8%;
+    font-size: 2em;
+  }
+  .restaurants .bloccarte .bloctxtcoeur .coeur i.fas.fa-heart {
+    display: none;
+  }
+
+  body {
+    background-color: #f6f6f6;
+  }
+
+  .headergout {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-right: 15%;
+  }
+
+  img {
+    width: 100%;
+    height: 1000px;
+    object-fit: cover;
+  }
+
+  .conteneurpalettegout {
+    background-color: #f6f6f6;
+    margin-top: -35%;
+    padding-bottom: 5%;
+    position: relative;
+    border-radius: 35px 35px 0px 0px;
+    box-shadow: 0.25rem 0.25rem 10px #3535358a;
+    opacity: 0.9;
+  }
+  .conteneurpalettegout .TitreMenuPalette {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .conteneurpalettegout .TitreMenuPalette h1 {
+    margin-left: 4%;
+    font-size: 1.7em;
+  }
+  .conteneurpalettegout .TitreMenuPalette .coeur {
+    margin-right: 6%;
+  }
+
+  .menu {
+    margin-bottom: 10%;
+  }
+  .menu h3 {
+    margin-left: 5%;
+    color: gray;
+  }
+
+  .conteneurmenu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0.25rem 0.25rem 0.5rem gray;
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+  }
+  .conteneurmenu .txtmenu {
+    margin-left: 3%;
+  }
+  .conteneurmenu .prix {
+    margin-right: 5%;
+    margin-top: 13%;
+  }
 }
+@media (max-width: 1024px) {
+  .conteneurloader {
+    /* Position et appel de l'animation */
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fffffff2;
+    animation: loadbg 0.1s;
+    animation-delay: 2.9s;
+    animation-fill-mode: both;
+  }
+  .conteneurloader .loader {
+    /* Création du loader */
+    border: 10px solid #f3f3f3;
+    border-top: 10px solid #FF79DA;
+    border-bottom: 10px solid #9356DC;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    animation: spin 4s linear;
+    /* placement du loader au milieu de la page */
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
 
+  .Fonctionnement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Fonctionnement ol {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Fonctionnement .tuto {
+    list-style: none;
+    width: 30%;
+    margin-bottom: 7%;
+  }
+  .Fonctionnement .tuto .chiffre {
+    margin-left: -13%;
+  }
+}
 @media (max-width: 425px) {
-    html body {
-        font-family: Roboto, sans-serif;
-        border: 2px solid black;
-    }
-    html body h1 {
-        font-family: "Shrikhand", cursive;
-        display: flex;
-        justify-content: center;
-    }
-    html body h2 {
-        margin-left: 5%;
-    }
-    html body .conteneurloader {
-        /* Position et appel de l'animation */
-        position: fixed;
-        z-index: 3;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: #fffffff2;
-        animation: loadbg 0.1s;
-        animation-delay: 2.9s;
-        animation-fill-mode: both;
-    }
-    html body .conteneurloader .loader {
-        /* Création du loader */
-        border: 10px solid #f3f3f3;
-        border-top: 10px solid #FF79DA;
-        border-bottom: 10px solid #9356DC;
-        border-radius: 50%;
-        width: 100px;
-        height: 100px;
-        animation: spin 4s linear;
-        /* placement du loader au milieu de la page */
-        margin: auto;
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-    }
-    .position {
-        display: flex;
-        justify-content: center;
-        font-size: 1.2em;
-        background-color: #eaeaea;
-    }
-    .position .local__icon {
-        display: flex;
-        align-items: center;
-        margin-right: 3%;
-    }
-    .headertxt {
-        text-align: center;
-        background-color: #f6f6f6;
-        padding: 10%;
-    }
-    .Fonctionnement {
-        display: flex;
-        flex-direction: column;
-        align-items: stretch;
-    }
-    .Fonctionnement .tuto {
-        list-style: none;
-        font-size: 0.9em;
-        font-weight: bold;
-        width: 80%;
-        padding: 7%;
-        margin-bottom: 15%;
-        background-color: #f6f6f6;
-        border-radius: 20px;
-        box-shadow: 0.25rem 0.25rem 0.5rem gray;
-    }
-    .Fonctionnement .tuto .chiffre {
-        background-color: #9356DC;
-        border-radius: 50%;
-        padding: 5px 8px 5px 8px;
-        margin-left: -13%;
-        margin-right: 6%;
-    }
-    .Fonctionnement .tuto .tuto__icon {
-        margin-right: 5%;
-    }
-    ol {
-        padding-left: 20px;
-    }
-    .restaurants {
-        background-color: #f6f6f6;
-        padding-top: 7%;
-        padding-bottom: 7%;
-    }
-    .restaurants .bloccarte {
-        border-radius: 15px;
-        margin-left: 5%;
-        margin-right: 5%;
-        margin-bottom: 6%;
-        box-shadow: 0.25rem 0.25rem 0.5rem gray;
-        position: relative;
-        z-index: 0;
-    }
-    .restaurants .bloccarte .news {
-        position: absolute;
-        top: 5%;
-        right: 4%;
-        z-index: 1;
-        background-color: #99E2D0;
-        color: #32b091;
-        height: 17px;
-        width: 20%;
-        text-align: center;
-        padding: 2%;
-    }
-    .restaurants .bloccarte .carte {
-        text-decoration: none;
-    }
-    .restaurants .bloccarte img {
-        width: 100%;
-        height: 250px;
-        border-radius: 15px 15px 0px 0px;
-        object-fit: cover;
-    }
-    .restaurants .bloccarte .bloctxtcoeur {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
-        color: black;
-    }
-    .restaurants .bloccarte .bloctxtcoeur .txtimg {
-        line-height: 0.5em;
-        margin-left: 3%;
-    }
-    .restaurants .bloccarte .bloctxtcoeur .coeur {
-        font-size: 2em;
-        margin-right: 8%;
-    }
-    .restaurants .bloccarte .bloctxtcoeur .coeur .coeurvide {
-        position: relative;
-        z-index: 1;
-        opacity: 1;
-    }
-    .restaurants .bloccarte .bloctxtcoeur .coeur .coeurplein {
-        position: absolute;
-        right: 8%;
-        z-index: 2;
-        opacity: 0;
-    }
-    .headergout {
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        flex-direction: row;
-        flex-wrap: wrap;
-        margin-right: 15%;
-    }
-    img {
-        width: 100%;
-    }
-    .conteneurpalettegout {
-        background-color: #f6f6f6;
-        margin-top: -12%;
-        padding-bottom: 15%;
-        position: relative;
-        border-radius: 35px 35px 0px 0px;
-    }
-    .conteneurpalettegout .TitreMenuPalette {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-    .conteneurpalettegout .TitreMenuPalette h1 {
-        margin-left: 4%;
-        font-size: 1.6em;
-    }
-    .conteneurpalettegout .TitreMenuPalette .coeur {
-        margin-right: 6%;
-    }
-    .menu {
-        margin-bottom: 10%;
-    }
-    .menu h3 {
-        margin-left: 5%;
-        color: gray;
-    }
-    .menu .barre {
-        height: 3px;
-        width: 17%;
-        margin-left: 5%;
-        margin-top: -5%;
-        margin-bottom: 9%;
-        background-color: #99E2D0;
-    }
-    .conteneurmenu {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-        align-items: center;
-        background-color: #fff;
-        border-radius: 20px;
-        box-shadow: 0.25rem 0.25rem 0.5rem gray;
-        width: 90%;
-        margin-left: 5%;
-        margin-bottom: 5%;
-        opacity: 0;
-        animation: menuanim 400ms forwards;
-    }
-    .conteneurmenu .txtmenu {
-        margin-left: 3%;
-    }
-    .conteneurmenu .prix {
-        margin-right: 5%;
-        margin-top: 13%;
-    }
-    .delay-0 {
-        animation-delay: 0;
-    }
-    .delay-1 {
-        animation-delay: 1s;
-    }
-    .delay-2 {
-        animation-delay: 2s;
-    }
-    .delay-3 {
-        animation-delay: 3s;
-    }
-    .delay-4 {
-        animation-delay: 4s;
-    }
-    .delay-5 {
-        animation-delay: 5s;
-    }
-    .delay-6 {
-        animation-delay: 6s;
-    }
-    .delay-7 {
-        animation-delay: 7s;
-    }
-    .delay-8 {
-        animation-delay: 8s;
-    }
-}
+  html body {
+    font-family: Roboto, sans-serif;
+    border: 2px solid black;
+  }
+  html body h1 {
+    font-family: "Shrikhand", cursive;
+    display: flex;
+    justify-content: center;
+  }
+  html body h2 {
+    margin-left: 5%;
+  }
+  html body .conteneurloader {
+    /* Position et appel de l'animation */
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fffffff2;
+    animation: loadbg 0.1s;
+    animation-delay: 2.9s;
+    animation-fill-mode: both;
+  }
+  html body .conteneurloader .loader {
+    /* Création du loader */
+    border: 10px solid #f3f3f3;
+    border-top: 10px solid #FF79DA;
+    border-bottom: 10px solid #9356DC;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    animation: spin 4s linear;
+    /* placement du loader au milieu de la page */
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
 
+  .position {
+    display: flex;
+    justify-content: center;
+    font-size: 1.2em;
+    background-color: #eaeaea;
+  }
+  .position .local__icon {
+    display: flex;
+    align-items: center;
+    margin-right: 3%;
+  }
+
+  .headertxt {
+    text-align: center;
+    background-color: #f6f6f6;
+    padding: 10%;
+  }
+
+  .Fonctionnement {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .Fonctionnement .tuto {
+    list-style: none;
+    font-size: 0.9em;
+    font-weight: bold;
+    width: 80%;
+    padding: 7%;
+    margin-bottom: 15%;
+    background-color: #f6f6f6;
+    border-radius: 20px;
+    box-shadow: 0.25rem 0.25rem 0.5rem gray;
+  }
+  .Fonctionnement .tuto .chiffre {
+    background-color: #9356DC;
+    border-radius: 50%;
+    padding: 5px 8px 5px 8px;
+    margin-left: -13%;
+    margin-right: 6%;
+  }
+  .Fonctionnement .tuto .tuto__icon {
+    margin-right: 5%;
+  }
+
+  ol {
+    padding-left: 20px;
+  }
+
+  .restaurants {
+    background-color: #f6f6f6;
+    padding-top: 7%;
+    padding-bottom: 7%;
+  }
+  .restaurants .bloccarte {
+    border-radius: 15px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 6%;
+    box-shadow: 0.25rem 0.25rem 0.5rem gray;
+    position: relative;
+    z-index: 0;
+  }
+  .restaurants .bloccarte .news {
+    position: absolute;
+    top: 5%;
+    right: 4%;
+    z-index: 1;
+    background-color: #99E2D0;
+    color: #32b091;
+    height: 17px;
+    width: 20%;
+    text-align: center;
+    padding: 2%;
+  }
+  .restaurants .bloccarte .carte {
+    text-decoration: none;
+  }
+  .restaurants .bloccarte img {
+    width: 100%;
+    height: 250px;
+    border-radius: 15px 15px 0px 0px;
+    object-fit: cover;
+  }
+  .restaurants .bloccarte .bloctxtcoeur {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+  }
+  .restaurants .bloccarte .bloctxtcoeur .txtimg {
+    line-height: 0.5em;
+    margin-left: 3%;
+  }
+  .restaurants .bloccarte .bloctxtcoeur .coeur {
+    font-size: 2em;
+    margin-right: 8%;
+  }
+  .restaurants .bloccarte .bloctxtcoeur .coeur .coeurvide {
+    position: relative;
+    z-index: 1;
+    opacity: 1;
+  }
+  .restaurants .bloccarte .bloctxtcoeur .coeur .coeurplein {
+    position: absolute;
+    right: 8%;
+    z-index: 2;
+    opacity: 0;
+  }
+
+  .headergout {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-right: 15%;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .conteneurpalettegout {
+    background-color: #f6f6f6;
+    margin-top: -12%;
+    padding-bottom: 15%;
+    position: relative;
+    border-radius: 35px 35px 0px 0px;
+  }
+  .conteneurpalettegout .TitreMenuPalette {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .conteneurpalettegout .TitreMenuPalette h1 {
+    margin-left: 4%;
+    font-size: 1.6em;
+  }
+  .conteneurpalettegout .TitreMenuPalette .coeur {
+    margin-right: 6%;
+  }
+
+  .menu {
+    margin-bottom: 10%;
+  }
+  .menu h3 {
+    margin-left: 5%;
+    color: gray;
+  }
+  .menu .barre {
+    height: 3px;
+    width: 17%;
+    margin-left: 5%;
+    margin-top: -5%;
+    margin-bottom: 9%;
+    background-color: #99E2D0;
+  }
+
+  .conteneurmenu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0.25rem 0.25rem 0.5rem gray;
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    opacity: 0;
+    animation: menuanim 400ms forwards;
+  }
+  .conteneurmenu .txtmenu {
+    margin-left: 3%;
+  }
+  .conteneurmenu .prix {
+    margin-right: 5%;
+    margin-top: 13%;
+  }
+
+  .delay-0 {
+    animation-delay: 0;
+  }
+
+  .delay-1 {
+    animation-delay: 1s;
+  }
+
+  .delay-2 {
+    animation-delay: 2s;
+  }
+
+  .delay-3 {
+    animation-delay: 3s;
+  }
+
+  .delay-4 {
+    animation-delay: 4s;
+  }
+
+  .delay-5 {
+    animation-delay: 5s;
+  }
+
+  .delay-6 {
+    animation-delay: 6s;
+  }
+
+  .delay-7 {
+    animation-delay: 7s;
+  }
+
+  .delay-8 {
+    animation-delay: 8s;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
