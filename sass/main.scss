@@ -491,7 +491,7 @@
                 transition: 0.5s;
                 background: -webkit-linear-gradient(#FF79DA, #9356DC);
                 background-clip: text;
-                text-decoration: transparent;
+                -webkit-text-fill-color: transparent;
             }
             // Codage des pages restaurants//
             .headergout {
