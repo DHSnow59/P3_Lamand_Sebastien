@@ -452,7 +452,7 @@
     justify-content: center;
   }
   html body h2 {
-    margin-left: 5%;
+    margin-left: 6%;
   }
   html body .conteneurloader {
     /* Position et appel de l'animation */
@@ -515,7 +515,6 @@
     font-weight: bold;
     width: 80%;
     padding: 7%;
-    margin-bottom: 15%;
     background-color: #f6f6f6;
     border-radius: 20px;
     box-shadow: 0.25rem 0.25rem 0.5rem gray;
@@ -532,7 +531,7 @@
   }
 
   ol {
-    padding-left: 20px;
+    width: 80%;
   }
 
   .restaurants {
@@ -540,7 +539,14 @@
     padding-top: 7%;
     padding-bottom: 7%;
   }
+  .restaurants .conteneurresto {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+  }
   .restaurants .bloccarte {
+    width: 90%;
     border-radius: 15px;
     margin-left: 5%;
     margin-right: 5%;
@@ -598,6 +604,34 @@
     opacity: 0;
   }
 
+  /*placement du input pour le coeur */
+  input {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 3;
+  }
+
+  input:checked ~ .far {
+    transition: 0.5s;
+    opacity: 0;
+  }
+
+  input:checked ~ .fas {
+    transition: 0.5s;
+    opacity: 1;
+  }
+
+  .fas {
+    opacity: 0;
+    transition: 0.5s;
+    background: -webkit-linear-gradient(#FF79DA, #9356DC);
+    background-clip: text;
+    text-decoration: transparent;
+  }
+
   .headergout {
     display: flex;
     align-items: center;
@@ -609,6 +643,7 @@
 
   img {
     width: 100%;
+    height: auto;
   }
 
   .conteneurpalettegout {
