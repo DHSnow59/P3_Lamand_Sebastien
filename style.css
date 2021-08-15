@@ -591,13 +591,13 @@
   }
   .restaurants .bloccarte .bloctxtcoeur .coeur .coeurvide {
     position: relative;
-    z-index: 1;
+    z-index: 2;
   }
   .restaurants .bloccarte .bloctxtcoeur .coeur .coeurplein {
     position: absolute;
     right: 8%;
-    z-index: 2;
-    opacity: 0;
+    z-index: 1;
+    opacity: 1;
   }
 
   /*placement du input pour le coeur */
