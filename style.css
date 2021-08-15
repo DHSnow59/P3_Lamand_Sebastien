@@ -313,9 +313,6 @@
     margin-right: 8%;
     font-size: 2em;
   }
-  .restaurants .bloccarte .bloctxtcoeur .coeur i.fas.fa-heart {
-    display: none;
-  }
 
   body {
     background-color: #f6f6f6;
@@ -595,7 +592,6 @@
   .restaurants .bloccarte .bloctxtcoeur .coeur .coeurvide {
     position: relative;
     z-index: 1;
-    opacity: 1;
   }
   .restaurants .bloccarte .bloctxtcoeur .coeur .coeurplein {
     position: absolute;
@@ -614,7 +610,7 @@
     z-index: 3;
   }
 
-  input:checked ~ .far {
+  input:checked ~ .coeurvide {
     transition: 0.5s;
     opacity: 0;
   }
@@ -624,14 +620,21 @@
     opacity: 1;
   }
 
-  .fas {
-    opacity: 0;
+  input:checked ~ .coeurplein {
+    opacity: 1;
     transition: 0.5s;
     background: -webkit-linear-gradient(#FF79DA, #9356DC);
-    background-clip: text;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 
+  /*.fas {
+      opacity: 0;
+      transition: 0.5s;
+      background: -webkit-linear-gradient(#FF79DA, #9356DC);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+  }*/
   .headergout {
     display: flex;
     align-items: center;

@@ -182,9 +182,6 @@
                         .coeur {
                             margin-right: 8%;
                             font-size: 2em;
-                            i.fas.fa-heart {
-                                display: none;
-                            }
                         }
                     }
                 }
@@ -457,7 +454,6 @@
                             .coeurvide {
                                 position: relative;
                                 z-index: 1;
-                                opacity: 1;
                             }
                             .coeurplein {
                                 position: absolute;
@@ -478,7 +474,7 @@
                 cursor: pointer;
                 z-index: 3;
             }
-            input:checked~.far {
+            input:checked~.coeurvide {
                 transition: 0.5s;
                 opacity: 0;
             }
@@ -486,13 +482,20 @@
                 transition: 0.5s;
                 opacity: 1;
             }
-            .fas {
+            input:checked~.coeurplein {
+                opacity: 1;
+                transition: 0.5s;
+                background: -webkit-linear-gradient(#FF79DA, #9356DC);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+            /*.fas {
                 opacity: 0;
                 transition: 0.5s;
                 background: -webkit-linear-gradient(#FF79DA, #9356DC);
                 background-clip: text;
                 -webkit-text-fill-color: transparent;
-            }
+            }*/
             // Codage des pages restaurants//
             .headergout {
                 display: flex;
