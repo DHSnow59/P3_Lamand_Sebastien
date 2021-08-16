@@ -100,8 +100,9 @@
 }
 @media (max-width: 425px) {
   .btn {
-    width: 75%;
+    width: 85%;
     padding: 5%;
+    font-size: 1em;
     border-radius: 30px;
     background: linear-gradient(#FF79DA, #9356DC);
     box-shadow: 0.25rem 0.25rem 10px #3535358a;
@@ -227,9 +228,6 @@
     flex-direction: row;
     align-items: center;
   }
-  .Fonctionnement h2 {
-    margin-left: 1%;
-  }
   .Fonctionnement ol {
     list-style: none;
     margin-right: 2%;
@@ -309,9 +307,46 @@
     line-height: 0.5em;
     margin-left: 3%;
   }
-  .restaurants .bloccarte .bloctxtcoeur .coeur {
-    margin-right: 8%;
+
+  /*Coeur et animation*/
+  .coeur {
     font-size: 2em;
+    margin-right: 8%;
+  }
+  .coeur .coeurvide {
+    transition: 0.7s;
+    position: relative;
+    z-index: 2;
+  }
+  .coeur .coeurplein {
+    position: absolute;
+    right: 8%;
+    z-index: 1;
+    opacity: 0;
+  }
+  .coeur input:checked ~ .coeurplein {
+    opacity: 1;
+    transition: 0.7s;
+    /*ON DEFINI UN BACKGROUND*/
+    background: -webkit-linear-gradient(#FF79DA, #9356DC);
+    /*ON MET LE BACKGROUND SUR LE TEXTE*/
+    -webkit-background-clip: text;
+    /*POUR QUE LE BACKGROUND S'AFFICHE SUR LE TEXTE ON REND LE TEXTE TRANSPARENT*/
+    -webkit-text-fill-color: transparent;
+  }
+  .coeur input:checked ~ .coeurvide {
+    transition: 0.7s;
+    opacity: 0;
+  }
+
+  /*placement du input pour le coeur */
+  input {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 3;
   }
 
   body {
@@ -352,9 +387,6 @@
   .conteneurpalettegout .TitreMenuPalette h1 {
     margin-left: 4%;
     font-size: 1.7em;
-  }
-  .conteneurpalettegout .TitreMenuPalette .coeur {
-    margin-right: 6%;
   }
 
   .menu {
@@ -437,6 +469,47 @@
   .Fonctionnement .tuto .chiffre {
     margin-left: -13%;
   }
+
+  /*Coeur et animation*/
+  .coeur {
+    font-size: 2em;
+    margin-right: 8%;
+  }
+  .coeur .coeurvide {
+    transition: 0.7s;
+    position: relative;
+    z-index: 2;
+  }
+  .coeur .coeurplein {
+    position: absolute;
+    right: 8%;
+    z-index: 1;
+    opacity: 0;
+  }
+  .coeur input:checked ~ .coeurplein {
+    opacity: 1;
+    transition: 0.7s;
+    /*ON DEFINI UN BACKGROUND*/
+    background: -webkit-linear-gradient(#FF79DA, #9356DC);
+    /*ON MET LE BACKGROUND SUR LE TEXTE*/
+    -webkit-background-clip: text;
+    /*POUR QUE LE BACKGROUND S'AFFICHE SUR LE TEXTE ON REND LE TEXTE TRANSPARENT*/
+    -webkit-text-fill-color: transparent;
+  }
+  .coeur input:checked ~ .coeurvide {
+    transition: 0.7s;
+    opacity: 0;
+  }
+
+  /*placement du input pour le coeur */
+  input {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 3;
+  }
 }
 @media (max-width: 425px) {
   html body {
@@ -502,9 +575,18 @@
   }
 
   .Fonctionnement {
+    width: 90%;
     display: flex;
     flex-direction: column;
-    align-items: stretch;
+    align-items: flex-start;
+  }
+  .Fonctionnement ol {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    align-items: flex-start;
+    margin-left: -5%;
   }
   .Fonctionnement .tuto {
     list-style: none;
@@ -580,6 +662,7 @@
     justify-content: space-between;
     align-items: center;
     color: black;
+    /*Coeur et animation*/
   }
   .restaurants .bloccarte .bloctxtcoeur .txtimg {
     line-height: 0.5em;
@@ -590,6 +673,7 @@
     margin-right: 8%;
   }
   .restaurants .bloccarte .bloctxtcoeur .coeur .coeurvide {
+    transition: 0.7s;
     position: relative;
     z-index: 2;
   }
@@ -597,7 +681,21 @@
     position: absolute;
     right: 8%;
     z-index: 1;
+    opacity: 0;
+  }
+  .restaurants .bloccarte .bloctxtcoeur .coeur input:checked ~ .coeurplein {
     opacity: 1;
+    transition: 0.7s;
+    /*ON DEFINI UN BACKGROUND*/
+    background: -webkit-linear-gradient(#FF79DA, #9356DC);
+    /*ON MET LE BACKGROUND SUR LE TEXTE*/
+    -webkit-background-clip: text;
+    /*POUR QUE LE BACKGROUND S'AFFICHE SUR LE TEXTE ON REND LE TEXTE TRANSPARENT*/
+    -webkit-text-fill-color: transparent;
+  }
+  .restaurants .bloccarte .bloctxtcoeur .coeur input:checked ~ .coeurvide {
+    transition: 0.7s;
+    opacity: 0;
   }
 
   /*placement du input pour le coeur */
@@ -610,31 +708,6 @@
     z-index: 3;
   }
 
-  input:checked ~ .coeurvide {
-    transition: 0.5s;
-    opacity: 0;
-  }
-
-  input:checked ~ .fas {
-    transition: 0.5s;
-    opacity: 1;
-  }
-
-  input:checked ~ .coeurplein {
-    opacity: 1;
-    transition: 0.5s;
-    background: -webkit-linear-gradient(#FF79DA, #9356DC);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-
-  /*.fas {
-      opacity: 0;
-      transition: 0.5s;
-      background: -webkit-linear-gradient(#FF79DA, #9356DC);
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
-  }*/
   .headergout {
     display: flex;
     align-items: center;

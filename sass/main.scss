@@ -100,9 +100,6 @@
                 display: flex;
                 flex-direction: row;
                 align-items: center;
-                h2 {
-                    margin-left: 1%;
-                }
                 ol {
                     list-style: none;
                     margin-right: 2%;
@@ -179,12 +176,47 @@
                             line-height: 0.5em;
                             margin-left: 3%;
                         }
-                        .coeur {
-                            margin-right: 8%;
-                            font-size: 2em;
-                        }
                     }
                 }
+            }
+            /*Coeur et animation*/
+            .coeur {
+                font-size: 2em;
+                margin-right: 8%;
+                .coeurvide {
+                    transition: 0.7s;
+                    position: relative;
+                    z-index: 2;
+                }
+                .coeurplein {
+                    position: absolute;
+                    right: 8%;
+                    z-index: 1;
+                    opacity: 0;
+                }
+                input:checked~.coeurplein {
+                    opacity: 1;
+                    transition: 0.7s;
+                    /*ON DEFINI UN BACKGROUND*/
+                    background: -webkit-linear-gradient(#FF79DA, #9356DC);
+                    /*ON MET LE BACKGROUND SUR LE TEXTE*/
+                    -webkit-background-clip: text;
+                    /*POUR QUE LE BACKGROUND S'AFFICHE SUR LE TEXTE ON REND LE TEXTE TRANSPARENT*/
+                    -webkit-text-fill-color: transparent;
+                }
+                input:checked~.coeurvide {
+                    transition: 0.7s;
+                    opacity: 0;
+                }
+            }
+            /*placement du input pour le coeur */
+            input {
+                position: absolute;
+                width: 50px;
+                height: 50px;
+                opacity: 0;
+                cursor: pointer;
+                z-index: 3;
             }
             // Codage des pages restaurants//
             body {
@@ -220,9 +252,6 @@
                     h1 {
                         margin-left: 4%;
                         font-size: 1.7em;
-                    }
-                    .coeur {
-                        margin-right: 6%;
                     }
                 }
             }
@@ -305,6 +334,45 @@
                     }
                 }
             }
+            /*Coeur et animation*/
+            .coeur {
+                font-size: 2em;
+                margin-right: 8%;
+                .coeurvide {
+                    transition: 0.7s;
+                    position: relative;
+                    z-index: 2;
+                }
+                .coeurplein {
+                    position: absolute;
+                    right: 8%;
+                    z-index: 1;
+                    opacity: 0;
+                }
+                input:checked~.coeurplein {
+                    opacity: 1;
+                    transition: 0.7s;
+                    /*ON DEFINI UN BACKGROUND*/
+                    background: -webkit-linear-gradient(#FF79DA, #9356DC);
+                    /*ON MET LE BACKGROUND SUR LE TEXTE*/
+                    -webkit-background-clip: text;
+                    /*POUR QUE LE BACKGROUND S'AFFICHE SUR LE TEXTE ON REND LE TEXTE TRANSPARENT*/
+                    -webkit-text-fill-color: transparent;
+                }
+                input:checked~.coeurvide {
+                    transition: 0.7s;
+                    opacity: 0;
+                }
+            }
+            /*placement du input pour le coeur */
+            input {
+                position: absolute;
+                width: 50px;
+                height: 50px;
+                opacity: 0;
+                cursor: pointer;
+                z-index: 3;
+            }
         }
         
         @media (max-width: 425px) {
@@ -370,9 +438,18 @@
                 padding: 10%;
             }
             .Fonctionnement {
+                width: 90%;
                 display: flex;
                 flex-direction: column;
-                align-items: stretch;
+                align-items: flex-start;
+                ol {
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: nowrap;
+                    align-content: flex-start;
+                    align-items: flex-start;
+                    margin-left: -5%;
+                }
                 .tuto {
                     list-style: none;
                     font-size: 0.9em;
@@ -448,10 +525,12 @@
                             line-height: 0.5em;
                             margin-left: 3%;
                         }
+                        /*Coeur et animation*/
                         .coeur {
                             font-size: 2em;
                             margin-right: 8%;
                             .coeurvide {
+                                transition: 0.7s;
                                 position: relative;
                                 z-index: 2;
                             }
@@ -459,7 +538,21 @@
                                 position: absolute;
                                 right: 8%;
                                 z-index: 1;
+                                opacity: 0;
+                            }
+                            input:checked~.coeurplein {
                                 opacity: 1;
+                                transition: 0.7s;
+                                /*ON DEFINI UN BACKGROUND*/
+                                background: -webkit-linear-gradient(#FF79DA, #9356DC);
+                                /*ON MET LE BACKGROUND SUR LE TEXTE*/
+                                -webkit-background-clip: text;
+                                /*POUR QUE LE BACKGROUND S'AFFICHE SUR LE TEXTE ON REND LE TEXTE TRANSPARENT*/
+                                -webkit-text-fill-color: transparent;
+                            }
+                            input:checked~.coeurvide {
+                                transition: 0.7s;
+                                opacity: 0;
                             }
                         }
                     }
@@ -474,28 +567,6 @@
                 cursor: pointer;
                 z-index: 3;
             }
-            input:checked~.coeurvide {
-                transition: 0.5s;
-                opacity: 0;
-            }
-            input:checked~.fas {
-                transition: 0.5s;
-                opacity: 1;
-            }
-            input:checked~.coeurplein {
-                opacity: 1;
-                transition: 0.5s;
-                background: -webkit-linear-gradient(#FF79DA, #9356DC);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-            }
-            /*.fas {
-                opacity: 0;
-                transition: 0.5s;
-                background: -webkit-linear-gradient(#FF79DA, #9356DC);
-                background-clip: text;
-                -webkit-text-fill-color: transparent;
-            }*/
             // Codage des pages restaurants//
             .headergout {
                 display: flex;
