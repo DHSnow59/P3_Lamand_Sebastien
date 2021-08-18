@@ -483,6 +483,7 @@
   .coeur .coeurvide {
     transition: 0.7s;
     position: relative;
+    right: 5%;
     z-index: 2;
   }
   .coeur .coeurplein {
@@ -674,8 +675,8 @@
     margin-left: 3%;
   }
   .restaurants .bloccarte .bloctxtcoeur .coeur {
-    font-size: 2em;
-    margin-right: 8%;
+    font-size: 1.5em;
+    margin-right: 6%;
   }
   .restaurants .bloccarte .bloctxtcoeur .coeur .coeurvide {
     transition: 0.7s;
@@ -683,10 +684,7 @@
     z-index: 2;
   }
   .restaurants .bloccarte .bloctxtcoeur .coeur .coeurplein {
-    position: absolute;
-    right: 8%;
-    z-index: 1;
-    opacity: 0;
+    right: 6%;
   }
   .restaurants .bloccarte .bloctxtcoeur .coeur input:checked ~ .coeurplein {
     opacity: 1;
@@ -779,10 +777,11 @@
   }
   .conteneurpalettegout .TitreMenuPalette h1 {
     margin-left: 4%;
-    font-size: 1.6em;
+    font-size: 1.5em;
   }
   .conteneurpalettegout .TitreMenuPalette .coeur {
     margin-right: 6%;
+    font-size: 1.5em;
   }
 
   .menu {
