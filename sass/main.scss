@@ -268,6 +268,7 @@
                 flex-wrap: wrap;
                 justify-content: space-between;
                 align-items: center;
+                overflow: hidden;
                 background-color: #fff;
                 border-radius: 20px;
                 box-shadow: 0.25rem 0.25rem 0.5rem gray;
@@ -275,7 +276,11 @@
                 margin-left: 5%;
                 margin-bottom: 5%;
                 .txtmenu {
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
                     margin-left: 3%;
+                    line-height: 0.5;
                 }
                 .prix {
                     margin-right: 5%;
@@ -558,6 +563,39 @@
                     }
                 }
             }
+            .conteneurmenu:hover .comfirmation {
+                margin: 0rem;
+                transition: 0.5s;
+            }
+            .conteneurmenu:hover i {
+                transform: rotate(-360deg);
+                transition: 0.5s;
+            }
+            .comfirmation {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                background-color: #99e2d0;
+                width: 25%;
+                border-radius: 0px 20px 20px 0px;
+                margin: -1rem -5rem -1rem 1rem;
+                padding-bottom: 7%;
+                padding-top: 7%;
+                align-items: center;
+                div {
+                    display: flex;
+                    height: 25px;
+                    width: 35%;
+                    border-radius: 50%;
+                    background-color: #fff;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                    i {
+                        color: #99e2d0;
+                    }
+                }
+            }
             /*placement du input pour le coeur */
             input {
                 position: absolute;
@@ -632,6 +670,10 @@
                 animation: menuanim 400ms forwards;
                 .txtmenu {
                     margin-left: 3%;
+                    width: 100%;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
                 }
                 .prix {
                     margin-right: 5%;
