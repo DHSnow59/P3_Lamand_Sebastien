@@ -72,9 +72,9 @@
   }
 
   .commander {
-    width: 50%;
-    margin-left: 25%;
-    padding: 5%;
+    width: 25%;
+    margin-left: 37.5%;
+    padding: 3%;
     border-radius: 30px;
     background: linear-gradient(#FF79DA, #9356DC);
     box-shadow: 0.25rem 0.25rem 10px #3535358a;
@@ -376,6 +376,8 @@
     border-radius: 35px 35px 0px 0px;
     box-shadow: 0.25rem 0.25rem 10px #3535358a;
     opacity: 0.9;
+    width: 80%;
+    margin-left: 10%;
   }
   .conteneurpalettegout .TitreMenuPalette {
     display: flex;
@@ -404,17 +406,17 @@
     flex-direction: column;
     justify-content: flex-end;
     background-color: #99e2d0;
-    width: 25%;
+    width: 30%;
     border-radius: 0px 20px 20px 0px;
-    margin: -1rem -5rem -1rem 1rem;
-    padding-bottom: 7%;
-    padding-top: 7%;
+    margin: -1rem -12rem -1rem 1rem;
+    padding-bottom: 3%;
+    padding-top: 3%;
     align-items: center;
   }
   .comfirmation div {
     display: flex;
-    height: 25px;
-    width: 35%;
+    height: 40px;
+    width: 25%;
     border-radius: 50%;
     background-color: #fff;
     flex-direction: row;
@@ -428,6 +430,14 @@
   .menu {
     margin-bottom: 10%;
   }
+  .menu .barre {
+    height: 3px;
+    width: 5%;
+    margin-left: 5%;
+    margin-top: -1%;
+    margin-bottom: 4%;
+    background-color: #99E2D0;
+  }
   .menu h3 {
     margin-left: 5%;
     color: gray;
@@ -436,16 +446,18 @@
   .conteneurmenu {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
     overflow: hidden;
     background-color: #fff;
     border-radius: 20px;
-    box-shadow: 0.25rem 0.25rem 0.5rem gray;
-    width: 90%;
+    box-shadow: 0.25rem 0.25rem 0.5rem grey;
+    width: 60%;
     margin-left: 5%;
     margin-bottom: 5%;
+    opacity: 0;
+    animation: menuanim 400ms forwards;
   }
   .conteneurmenu .txtmenu {
     white-space: nowrap;
@@ -453,10 +465,42 @@
     text-overflow: ellipsis;
     margin-left: 3%;
     line-height: 0.5;
+    width: 80%;
   }
   .conteneurmenu .prix {
-    margin-right: 5%;
-    margin-top: 13%;
+    margin-left: 15rem;
+    margin-top: 0;
+    width: 20%;
+  }
+  .conteneurmenu .delay-0 {
+    animation-delay: 0;
+  }
+  .conteneurmenu .delay-1 {
+    animation-delay: 1s;
+  }
+  .conteneurmenu .delay-2 {
+    animation-delay: 2s;
+  }
+  .conteneurmenu .delay-3 {
+    animation-delay: 3s;
+  }
+  .conteneurmenu .delay-4 {
+    animation-delay: 4s;
+  }
+  .conteneurmenu .delay-5 {
+    animation-delay: 5s;
+  }
+  .conteneurmenu .delay-6 {
+    animation-delay: 6s;
+  }
+  .conteneurmenu .delay-7 {
+    animation-delay: 7s;
+  }
+  .conteneurmenu .delay-8 {
+    animation-delay: 8s;
+  }
+  .conteneurmenu .delay-9 {
+    animation-delay: 9s;
   }
 }
 @media (max-width: 1024px) {
@@ -490,6 +534,19 @@
     left: 0;
     right: 0;
     bottom: 0;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  .header__arrow {
+    font-size: 1.5rem;
+    color: #000;
+  }
+
+  img {
+    height: 800px;
   }
 
   .Fonctionnement {
@@ -553,37 +610,39 @@
     z-index: 3;
   }
 
+  .conteneurmenu {
+    width: 70%;
+  }
+  .conteneurmenu .txtmenu {
+    width: 70%;
+  }
+  .conteneurmenu .prix {
+    width: 30%;
+    margin-top: 0%;
+    margin-right: -8rem;
+  }
+
+  /*Animation de confirmation */
   .conteneurmenu:hover .comfirmation {
     margin: 0rem;
-    transition: 0.5s;
+    transition: 0.8s;
   }
 
   .conteneurmenu:hover i {
     transform: rotate(-360deg);
-    transition: 0.5s;
+    transition: 0.8s;
   }
 
   .comfirmation {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    background-color: #99e2d0;
-    width: 25%;
+    width: 20%;
     border-radius: 0px 20px 20px 0px;
-    margin: -1rem -5rem -1rem 1rem;
-    padding-bottom: 7%;
-    padding-top: 7%;
-    align-items: center;
+    margin: -1rem -11rem -1rem 1rem;
+    padding-bottom: 1.3rem;
+    padding-top: 1.3rem;
   }
   .comfirmation div {
-    display: flex;
-    height: 25px;
-    width: 35%;
-    border-radius: 50%;
-    background-color: #fff;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    height: 35px;
+    width: 30%;
   }
   .comfirmation div i {
     color: #99e2d0;
@@ -603,7 +662,7 @@
     margin-left: 6%;
   }
   html body .conteneurloader {
-    /* Position et appel de l'animation */
+    /* Position et appel de l'animation loader */
     position: fixed;
     z-index: 3;
     width: 100%;
@@ -947,6 +1006,10 @@
 
   .delay-8 {
     animation-delay: 8s;
+  }
+
+  .delay-9 {
+    animation-delay: 9s;
   }
 }
 
