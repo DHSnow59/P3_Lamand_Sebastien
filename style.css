@@ -477,34 +477,44 @@
     margin-top: 0;
     width: 20%;
   }
-  .conteneurmenu .delay-0 {
+
+  .delay-0 {
     animation-delay: 0;
   }
-  .conteneurmenu .delay-1 {
+
+  .delay-1 {
     animation-delay: 1s;
   }
-  .conteneurmenu .delay-2 {
+
+  .delay-2 {
     animation-delay: 2s;
   }
-  .conteneurmenu .delay-3 {
+
+  .delay-3 {
     animation-delay: 3s;
   }
-  .conteneurmenu .delay-4 {
+
+  .delay-4 {
     animation-delay: 4s;
   }
-  .conteneurmenu .delay-5 {
+
+  .delay-5 {
     animation-delay: 5s;
   }
-  .conteneurmenu .delay-6 {
+
+  .delay-6 {
     animation-delay: 6s;
   }
-  .conteneurmenu .delay-7 {
+
+  .delay-7 {
     animation-delay: 7s;
   }
-  .conteneurmenu .delay-8 {
+
+  .delay-8 {
     animation-delay: 8s;
   }
-  .conteneurmenu .delay-9 {
+
+  .delay-9 {
     animation-delay: 9s;
   }
 }
@@ -662,7 +672,6 @@
 @media (max-width: 425px) {
   html body {
     font-family: Roboto, sans-serif;
-    border: 2px solid black;
   }
   html body h1 {
     font-family: "Shrikhand", cursive;
