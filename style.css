@@ -160,9 +160,11 @@
     opacity: 1;
   }
 }
+/* Media pour destock */
 @media (max-width: 2560px) {
   html body {
     font-family: Roboto, sans-serif;
+    /* Position et appel de l'animation */
   }
   html body h1 {
     font-family: "Shrikhand", cursive;
@@ -173,7 +175,6 @@
     margin-left: 5%;
   }
   html body .conteneurloader {
-    /* Position et appel de l'animation */
     position: fixed;
     z-index: 3;
     width: 100%;
@@ -185,9 +186,9 @@
     animation: loadbg 0.1s;
     animation-delay: 2.9s;
     animation-fill-mode: both;
+    /* Création du loader */
   }
   html body .conteneurloader .loader {
-    /* Création du loader */
     border: 10px solid #f3f3f3;
     border-top: 10px solid #FF79DA;
     border-bottom: 10px solid #9356DC;
@@ -396,16 +397,19 @@
     font-size: 1.7em;
   }
 
+  /* Animation de la confirmation de menu */
   .conteneurmenu:hover .comfirmation {
     margin: 0rem;
     transition: 0.5s;
   }
 
+  /* Animation de l'icone dans la confirmation*/
   .conteneurmenu:hover i {
     transform: rotate(-360deg);
     transition: 0.5s;
   }
 
+  /*création et mise en place de la comfirmation*/
   .comfirmation {
     display: flex;
     flex-direction: column;
@@ -622,12 +626,8 @@
 
   /*placement du input pour le coeur */
   input {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    opacity: 0;
-    cursor: pointer;
-    z-index: 3;
+    width: 20px;
+    height: 20px;
   }
 
   .conteneurmenu {
@@ -672,11 +672,6 @@
 @media (max-width: 425px) {
   html body {
     font-family: Roboto, sans-serif;
-  }
-  html body h1 {
-    font-family: "Shrikhand", cursive;
-    display: flex;
-    justify-content: center;
   }
   html body h2 {
     margin-left: 6%;
@@ -835,7 +830,7 @@
     z-index: 2;
   }
   .restaurants .bloccarte .bloctxtcoeur .coeur .coeurplein {
-    right: 6%;
+    right: 6.5%;
   }
   .restaurants .bloccarte .bloctxtcoeur .coeur input:checked ~ .coeurplein {
     opacity: 1;
@@ -854,12 +849,8 @@
 
   /*placement du input pour le coeur */
   input {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    opacity: 0;
-    cursor: pointer;
-    z-index: 3;
+    width: 15px;
+    height: 15px;
   }
 
   .headergout {
@@ -899,6 +890,12 @@
   .conteneurpalettegout .TitreMenuPalette .coeur {
     margin-right: 6%;
     font-size: 1.5em;
+  }
+  .conteneurpalettegout .TitreMenuPalette .coeur .coeurvide2 {
+    transition: 0.7s;
+    position: relative;
+    right: 37%;
+    z-index: 2;
   }
 
   /*Animation comfirmation*/
