@@ -742,7 +742,7 @@
   }
   .Fonctionnement .tuto {
     list-style: none;
-    font-size: 0.9em;
+    font-size: 0.85em;
     font-weight: bold;
     width: 80%;
     padding: 7%;
@@ -794,7 +794,7 @@
     background-color: #99E2D0;
     color: #32b091;
     height: 17px;
-    width: 20%;
+    width: 25%;
     text-align: center;
     padding: 2%;
   }
